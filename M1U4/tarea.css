@@ -1,0 +1,36 @@
+h1{
+    color: #ad2828;
+    font-family: monospace;
+    text-align: center;
+    font-size: 50px;
+}
+
+img{
+    padding: 15px;
+}
+
+h3{
+    color: #ad2828;
+    font-family: monospace;
+    font-size: 22px;
+    border-bottom: 3px solid darkred;
+}
+
+ul{
+    font-family: monospace ;
+    font-size: 16px;
+}
+
+p{
+    font-family: monospace; 
+    font-size: 16px;
+}
+
+#formula{
+    color: white;
+    width: 300px ;
+    height: 325px ;
+    background-color: #ad2828;
+    padding: 20px;
+    border: 10px solid darkred;
+}
