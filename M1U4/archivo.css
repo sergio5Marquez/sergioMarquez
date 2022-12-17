@@ -1,0 +1,53 @@
+h1{
+    color: hsl(0, 83%, 45%);
+    font-family:cursive; 
+    font-size:50px;
+    text-transform: uppercase; 
+    text-align: center;    
+}
+
+p{
+    color: #0000ff;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+h2{
+    color: #613803;
+    border-bottom:2px solid #613803;
+}
+
+.otrocolor{
+    color: rgb(5, 114, 5);
+}
+
+ul{
+    color:rgb(223, 247, 10);
+    font-family: monospace;
+    font-size: 20px;
+}
+#lista{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 5px solid black;
+}
+#formula{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(112, 233, 233);
+    border: 5px solid rgb(23, 155, 196) ;
+    padding: 20px;
+    /* font-size: 15px; */
+    text-transform: uppercase;   
+}
+    /* Codigo sacado de una pagina web precisamente (animeflv) */
+    
+    /* border-collapse: separate; */
+    /* text-indent: initial; */
+    /* white-space: pre; */
+    /* font-size: initial; */
+    /* font-family: monospace;  */
+    /* tab-size: 4; */
+    /* border-spacing: 0px; */
+
