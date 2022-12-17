@@ -11,10 +11,8 @@
    <!-- <h5>yo soy BATMAN</h5> -->
    <!-- parafos: -->
    <h3>Parafos</h3>
-   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-    Corporis eum natus non nam culpa quasi assumenda rerum, vel
-     doloremque, aut voluptatibus quae? Porro vitae mollitia enim 
-     eligendi, fugiat eum error.</p>
+   <p>Lorem <b> ipsum dolor sit amet consectetur, adipisicing elit. Corporis</b> eum natus non nam culpa quasi assumenda rerum, vel
+    doloremque, <strong><em> saut voluptatibus quae? Porro</em></strong> vitae mollitia enim ssseligendi, fugiat eum error.</p>
     <h3>ejemplos de listas</h3>
     <ul>
         <li>dragon ball z</li>
@@ -45,9 +43,10 @@
     
     <h3>Ejempro de video</h3>
     
-    <video src="Surf Curse   Freaks.mp4" poster="flor.jpg" controls ></video>
+    <video src="Surf Curse   Freaks.mp4" height="400px" width="400px" poster="flor.jpg"  controls ></video>
+    <video src="carrera.mp4" height="400px" width="300px" controls></video>
     <h4>ejempro de video escondido en una parpeta</h4>
-    <video src="mas img/batman.mp4"  controls ></video>
+    <video src="mas img/batman.mp4" height="300px" width="400"   controls ></video>
     <h4>Ejemplo de audio </h4>
     <audio src="full.mp3" controls ></audio>
    
@@ -56,6 +55,7 @@
    d <audio src="mas img/Strain_Interlude.mp3"controls></audio>
 
     <h5>ejemplo de etiqueta svg </h5>
+
     <svg> width="100" height="100">
       <circle cx="30" cy="30" r="20" stroke="green" stroke-width="4" fill="red"/>
     </svg>
@@ -71,11 +71,15 @@
 
     <form action="" method="">
         <p>
-            <label for="nom">nombre</label>
+            <label for="">nombre</label>
             <input type="text" name="nombre" />
         </p>
         <p>
             <input type="text" apellido="" placeholder="apellido"/>
+        </p>
+        <p>
+            <label for="email">Correo electronico</label>
+            <input type="email" name="email" placeholder="@">
         </p>
         <p>
             <label for="pass">contraseña</label>
@@ -129,18 +133,15 @@
                 <option value="universidad">universidad</option>
             </select>
         </p>
-
-        <h4>quinta plactica (comentarios</h4>
-
         <p>
-            <label for="comentarios">comentarios</label>
-            <textarea name="comentarios" ></textarea>
-
+            <label for="cometario">comentario</label>
+            <textarea name="comentario"></textarea>
         </p>
         <p>
-            <input type="submit" value="Emviar"/>
-            <input type="reset" value="Borrar"/>
+            <input type="submit" value="emviar">
+            <input type="reset" value="borrar">
         </p>
+        
         
     </form>
 
