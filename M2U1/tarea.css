@@ -1,0 +1,70 @@
+h1{
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    font-size: 50px;
+}
+
+img{
+    padding: 15px;
+    border-radius: 150px 10px;
+    width: 500px;
+    margin-left: 400px;
+}
+
+h3{
+    color: #1e97a0;
+    font-family: monospace;
+    font-size: 22px;
+    border-bottom: 3px solid black;
+}
+
+ul{
+    font-family: monospace ;
+    font-size: 16px;
+}
+
+p{
+    font-family: monospace; 
+    font-size: 16px;
+}
+
+#formula{
+    color: white;
+    width: 300px ;
+    height: 325px ;
+    background-color: #1e97a0;
+    padding: 20px;
+    border: 10px solid black;
+}
+
+/* las dos nuevas reglas o mas*/
+.fa-solid{
+    font-size: 28px;
+    color: #000000;
+    /* background-color: black; */
+}
+
+.img2{
+    border-radius: 200px 200px 200px 200px;
+    width: 210px;
+    height: 200px;
+    margin-left: 200px;
+}
+
+.img3{
+    border-radius: 200px 200px 200px 200px;
+    width: 210px;
+    height: 200px;
+    margin-left: 400px;
+}
+
+.cajaDeImg{
+    width: 1310px;
+    height: 500px;
+    background: linear-gradient(90deg,#050505 20%, #1e97a0 50%, #fffefe 80%);
+    border-radius: 0px 200px 0px 200px;
+    border: 12px groove #000000;
+    
+}
+
