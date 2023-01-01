@@ -1,0 +1,128 @@
+h2{
+    /* margin-top: 30px; */
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+
+
+div{
+    width: 250px; 
+    height: 200px;
+    padding: 10px; 
+    background-color: rgb(0, 255, 76);
+}
+
+div:hover{
+    background-color: aqua;
+}
+
+ul{
+   margin-left: 30px; 
+    width: 150px;
+    height: 140px;
+    /* padding-left:55px; */
+    padding: 30px;
+    background-color: rgb(165, 42, 138);
+}
+
+/* primer elemento */
+ul li:first-child{
+    color: white;
+}
+/* ultimo elemento */
+ul li:last-child{
+    color: rgb(0, 204, 255);
+}
+
+ul li:nth-child(3){
+    color: darkorange;
+}
+/* pseudo elementos */
+
+span{
+    width: 150px;
+    height: 250px;
+    background-color: aqua;
+    /* margin-top: 60px; */
+    padding: 10px;
+}
+span::after{
+    content: " como estas  que honda, ultimo elemento, esto no se puede tocar";
+    color: rgb(233, 31, 31);
+}
+
+span::before{
+    content: "primer elemento ";
+    color: red;
+}
+
+.lorem{
+    background-color: fuchsia;
+    padding: 10px;
+}
+
+p::first-line{
+    color: rgb(253, 253, 253);
+}
+
+textarea::placeholder{
+    color: red;
+    font-size: 20px;
+}
+
+input::placeholder{
+    color: blue;
+    font-size: 15px;
+}
+/* pocisamiento */
+#contenedor{
+    width: 300px;
+    height: 450px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+/* pocisamiento absolute */
+#caja1{
+    position: absolute;  
+    /* top: 0px auto; */
+    /* right=ala derecha */
+    right: 0px ;
+    /* bottom: 0px auto; */
+
+    width: 200px; 
+    height: 100px;
+    background-color: rgb(250, 12, 171);
+
+}
+/* pocisamiento estatico */
+
+#caja2{
+    position:static;
+    /* margin: 0 auto; */
+    /* margin-bottom =da espacio de alguna manera si lo pensas con logica ,todo tiene sentido */
+    margin-bottom: 20px;
+
+    width: 200px;
+    height: 100px;
+    background-color: gold;
+}
+#caja3{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(26, 161, 26);
+}
+#caja4{
+    position: relative;
+    top: 50px; 
+    left: 50px; 
+    margin: 0 auto;
+
+    width: 200px;
+    height: 100px;
+    background-color: bisque;
+}
+

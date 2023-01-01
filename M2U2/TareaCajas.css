@@ -1,0 +1,60 @@
+.contenedor{
+    background-color: brown;
+    width: 600px;
+    display: flex; 
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+.caja{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 6, 6);
+}
+
+.contenedor1{
+
+    background-color: blue; 
+    height: 500px; 
+    width: 450px;
+    /* display:inline-flex;  */
+    
+    align-items: center; 
+    flex-direction: row-reverse;
+
+    display: flex;
+    margin: 0 auto;
+}
+.caja1{
+    background-color: rgb(21, 145, 77);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor2{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja2{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    color: white;
+    font-size: 30px;
+}
+
