@@ -1,0 +1,89 @@
+body{
+    background-color: brown;
+}
+h1{
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    
+}
+
+.contenedor{
+    background-color: orange;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+.caja1{
+    color: white;
+    margin: 20px;
+    background-color: brown;
+    padding: 20px;
+    font-size: 20px;   
+}
+.caja1:last-child{
+    color:black;
+    background-color: yellow;
+}
+.enlaces{
+    color: white;
+    background-color: red;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    body{
+        background-color: black;
+    }
+    h1{
+        /* display: inline-flex; */
+        display: flex; 
+        font-size: 25px;
+        padding: 10px;
+        background-color: white;
+        margin: 20px; 
+    }
+
+    .contenedor{
+        background: gray;
+        flex-direction: column; 
+         /* width: 100%;  */
+         display: flex;  
+        /* margin-right:150px ; */
+
+         justify-content: center; 
+         align-items: center; 
+         padding: 5px; 
+    }
+    .caja1{
+        background-color: black;
+         margin: 10px; 
+        font-size: 15px;
+         
+        height: 200px;
+        padding: 10px;
+    }
+    .caja1:last-child{
+        background-color: rgb(43, 156, 156);
+        height: 250px;
+    }
+    .enlaces{
+        margin: 0 auto; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+
+        background-color: gray;
+        width: 80%; 
+        height: 200px;   
+    }
+}
+
