@@ -1,0 +1,16 @@
+body{
+  min-height: 100vh;
+  background: url(poste.png) no-repeat center center fixed;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+.accordion-body{
+  /* background-color: red;
+  color: white; */
+
+  min-width: 100vh; 
+  background-image: url(poste.png);
+  background-position: center ;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */ 
+}
