@@ -3,7 +3,7 @@
     /* background: linear-gradient(0deg,#c25d5d 0%, #db1515 40%, #d35050 80%); */
 
      background-image: var(--bs-gradient); 
-     background-color: #c90e0e; 
+     background-color: #c90e0e;  
 } 
 
 .sidebar-nav ul li a {
@@ -16,8 +16,8 @@
     transition: 0.5s;
 }
 .sidebar-nav ul li a:hover{
-    background-color: #c90e0e;
-    border-radius: 4px;
+    background-color: #c90e0e; 
+    border-radius: 4px; 
 }
 .sidebar-nav .offcanvas{
     width: 220px; 
