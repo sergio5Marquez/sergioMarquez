@@ -63,7 +63,7 @@ h2{
     color: #2e64a1;
     font-weight: 400;
 }
-/* empieza Home */
+/* empieza Home --------------------------------------------------------------------*/
 .bienvenidos{
     width: 75%;
     padding-right: 10px;
@@ -97,7 +97,7 @@ h2{
 }
 /* Fin Home */
 
-/* Comienza Nosotros */
+/* Comienza Nosotros ---------------------------------------------------------------------------*/
 .hitoria p {
     font-size: 12px;
 }
@@ -138,7 +138,7 @@ h2{
 }
 /* Fin nosotros */
 
-/* Comienso Servicio */
+/* Comienso Servicio -------------------------------------------------------------------*/
 .servicio{
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -168,7 +168,67 @@ h2{
     flex-direction: row-reverse;
 }
 /* fin cervicio */
-
 .logo{
     width: 100px;
 }
+/* empieza galeria ---------------------------------------------------------------- */
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.galeria img{
+    width: 18%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+/* fin  */
+/* empieza contacto------------------------------------------------------------------- */
+.contacto{
+    display: flex;
+    gap: 24;
+}
+.contacto div{
+    width: 100%;
+}
+.datos p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+}
+.formulario p{
+    display: flex;
+}
+.formulario p label{
+    min-width: 80px;
+}
+.formulario p label{
+    display: flex;
+    align-items: center;
+}
+.formulario p:nth-child(4){
+    align-items: start;
+}
+.formulario textarea{
+    resize: none;
+    height: 150px;
+}
+.formulario input[type="submit"]{
+    background: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+/* FIN  */

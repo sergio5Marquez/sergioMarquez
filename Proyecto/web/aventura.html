@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game play</title>
+    <link rel="icon" href="imagenes/icono.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- link de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tipografia h2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,24 +24,71 @@
     <!-- css -->
     <link rel="stylesheet" href="css/sitioWeb.css">
     <link rel="stylesheet" href="css/normalize.css">
-    
+
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="imagenes/logo.png" alt="logo">
-            <a href="index.html"><h2>Game play</h2></a>
+            <img class="mando" src="imagenes/logo.png" alt="logo">
+            <a href="index.html">
+                <h2>Game play</h2>
+            </a>
+        </div>
+
+        <div class="usuario">
+            <div> <i class=" user fa-solid fa-circle-user" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Iniciar Sesion </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form class="row g-3">
+                                <div class="col-md-12">
+
+                                    <input type="email" placeholder="correo electronico @" class="form-control"
+                                        id="inputEmail4">
+                                </div>
+                                <div class="col-md-12">
+
+                                    <input type="password" placeholder="********" class="form-control"
+                                        id="inputPassword4">
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Registrate</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">¿Olvidaste tu contraseña?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- offcanvas -->
         <div>
+            
             <input type="checkbox" name="" checked="checked">
             <span class="icon"> </span>
             <ul>
                 <li><a href="#genero">Genero</a></li>
-                <li><a href="#loglos">Loglo unicos</a></li>
-                <li><a href="#consolas">Consolas</a></li>
+                <li><a href="#loglos">Loglos unicos</a></li>
+                <li><a href="#consolas">Jefes dificiles</a></li>
                 <li><a href="#top">Tops</a></li>
                 <li><a href="#debate">Debate</a></li>
             </ul>
@@ -49,12 +101,12 @@
     <section class="containerGenero" id="genero">
         <form action="">
             <div class="genero">
-                <a href="aventura.html">
+                <a class="activo" href="aventura.html">
                     <h5>Accion-Aventura</h5>
                 </a>
             </div>
             <div class="genero">
-                <a class="activo" href="lucha.html">
+                <a href="lucha.html">
                     <h5>Lucha</h5>
                 </a>
             </div>
@@ -72,14 +124,9 @@
     </section>
     <br>
     <h3>ACCION Y AVENTURA</h3>
+    
     <div class="container">
-
-        <div class="row">
-            <div class="col">
-                
-            </div>
-        </div>
-
+       
         <div class="row">
             <div class="col">
                 <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
@@ -93,24 +140,24 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="5000">
-                            <img src="imagenes//generos/aventura2.jpg" class="d-block w-100" alt="...">
+                            <img src="imagenes//generos/aventura2.jpg" class="d-block w-100" alt="Spider-Man">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Spider-Man: Miles Morales</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <p>El adolescente Miles Morales se va haciendo a su nuevo hogar mientras sigue los pasos de su mentor Peter Parker como el nuevo Spider-Man.</p>
                             </div>
                         </div>
                         <div class="carousel-item " data-bs-interval="5000">
-                            <img src="imagenes/generos/sekiro.png" class="d-block w-100" alt="...">
+                            <img src="imagenes/generos/sekiro.png" class="d-block w-100" alt="SEKIRO">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>SEKIRO</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <p>El juego sigue a un shinobi del Período Sengoku, conocido como Lobo, que intenta vengarse de un clan de samuráis que atacó y secuestró a su maestro.</p>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <img src="imagenes/generos/GOD.png" class="d-block w-100" alt="...">
+                            <img src="imagenes/generos/GOD.png" class="d-block w-100" alt="god of war">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>GOD OF WAR:RAGNAROK</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <p>El Fimbulvetr está llegando a su fin y se profetiza que este dará paso al temido Ragnarök.</p>
                             </div>
                         </div>
                     </div>
@@ -126,27 +173,87 @@
                     </button>
                 </div>
             </div>
-            
-            <div class="row">    
-                <div class="col">
-                    <div class="clearfix">
-                        <img src="imagenes/generos/aventura-accion.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
-                    
-                        <p>
-                        A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
-                        </p>
-                    
-                        <p>
-                        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
-                        </p>
-                    
-                        <p>
-                        And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
-                        </p>
-                    </div>
-                </div>
-            </div> 
         </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="clearfix">
+                    <h5>Definicion</h5>
+                    
+                    <img src="imagenes/generos/aventura-accion.png" class="col-md-6 float-md-end mb-3 ms-md-3"
+                        alt="img">
+
+
+                    <p>
+                        Es un género de videojuegos que combina elementos del género aventura con elementos del género
+                        acción, especialmente elementos importantes como los puzles. El género existe en gran medida
+                        para distinguir este tipo de videojuegos de los videojuegos de aventura o de los videojuegos de
+                        rol.
+                    </p>
+
+                    <p>
+                        Algunos ven los videojuegos de acción como un género puro, y a los videojuegos de
+                        acción y aventura como videojuegos de acción que incluyen solución de problemas situacionales.
+                    </p>
+                    <h5>Jugabilidad</h5>
+                    <p>
+                        Los videojuegos de acción y aventura mantienen un ritmo más veloz que los videojuegos de
+                        aventura, e incluyen retos tanto físicos como conceptuales. A pesar de que se necesitan acciones
+                        que activen los reflejos (a menudo relacionadas con el combate o el evitar de este), la
+                        jugabilidad respeta algunos conceptos del género aventura (recolección de objetos, exploración
+                        del entorno e interacción con el mismo, solución de acertijos). Si bien los controles son al
+                        estilo arcade (movimiento del personaje, pocos comandos de acción) hay un objetivo final más
+                        allá del alto puntaje. Este tipo de videojuegos a veces son muy similares con los videojuegos de
+                        rol.
+                    </p>
+
+                    <p>
+                        Son distintos de las aventuras gráficas, las cuales a veces tienen personajes centrales con un
+                        movimiento libre, pero además poseen mayor variedad de comandos y menor o nula cantidad de
+                        elementos de los videojuegos árcade y también son distintos de las aventuras conversacionales,
+                        caracterizadas por tener una gran cantidad de comandos introducidos por el usuario mediante un
+                        complejo analizador de textos y no tener un personaje con movimiento libre. Si bien todos estos
+                        géneros comparten dinámicas generales de la jugabilidad, los videojuegos de acción y aventura
+                        varían mucho en el diseño de sus vistas, que incluyen vista aérea, desplazamiento lateral,
+                        primera persona, tercera persona, por encima del hombro y vista .
+                    </p>
+                    <img src="imagenes/generos/accion.jpg" class="col-md-6 float-md-start mb-3 ms-md-3" alt="img">
+                    <h5>Subgeneros</h5>
+
+                    <p>
+                        Los videojuegos de acción y aventura son difíciles de definir, sin embargo, se pueden
+                        diferenciar varios subgéneros. Algunos de los subgéneros más populares son:
+                    </p>
+                    <ol> 
+                        <li><i class="fa-solid fa-gamepad"></i>  Survival horror, como las series Project Zero, Resident Evil, Silent Hill, entre otras.
+                            Estos hacen énfasis en la administración de recursos en el contexto de un juego de terror.6​
+                        </li>
+                        <li><i class="fa-solid fa-gamepad"></i>  Videojuegos de plataforma de aventura, como Metroid y Castlevania: Symphony of the Night,
+                            que priorizan tanto la exploración como la solución de acertijos, pero también presentan
+                            características tradicionales de los videojuegos de plataforma. A estos videojuegos también
+                            se los conoce como videojuegos "Castleroid" o "Metroidvania".
+                        </li>
+                        <li><i class="fa-solid fa-gamepad"></i>  Videojuegos de rol de acción, como las series Kingdom Hearts y Baldur's Gate: Dark Alliance
+                            y los videojuegos Secret of Mana y Landstalker.
+
+                        </li>
+                        <li><i class="fa-solid fa-gamepad"></i>  Videojuegos de plataformas isométricos, a menudo asociados con el ZX Spectrum, como Knight
+                            Lore y Head Over Heels. Estos videojuegos presentan entornos completamente explorables con
+                            una jugabilidad en 3 dimensiones, y gráficos bidimensionales usando una perspectiva
+                            isométrica. </li>
+                        <li><i class="fa-solid fa-gamepad"></i>  Videojuegos de acción y aventura en primera persona, como Metroid Prime y Mirror's Edge, que
+                            combinan disparos en primera persona con elementos de los videojuegos de aventura. Suelen
+                            tener menos acción que un videojuego de disparos y una trama compleja.
+                        </li>
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+
 
     </div>
 

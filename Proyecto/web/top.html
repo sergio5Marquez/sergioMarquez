@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game play</title>
+    <!-- icono de la pestalla -->
+    <link rel="icon" href="imagenes/icono.ico">
+    <!-- link de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- tipografia h2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&family=Noto+Sans+JP:wght@500&family=Open+Sans:wght@300;400;700&family=PT+Sans+Narrow&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/sitioWeb.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+
+<body class="bodytop">
+    <header>
+        <div class="logo">
+            <img class="mando" src="imagenes/logo.png" alt="logo">
+            <a href="index.html">
+                <h2>Game play</h2>
+            </a>
+        </div>
+        <div class="usuario">
+            <div> <i class=" user fa-solid fa-circle-user" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></i>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Iniciar Sesion </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form class="row g-3">
+                                <div class="col-md-12">
+
+                                    <input type="email" placeholder="correo electronico @" class="form-control"
+                                        id="inputEmail4">
+                                </div>
+                                <div class="col-md-12">
+
+                                    <input type="password" placeholder="********" class="form-control"
+                                        id="inputPassword4">
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Registrate</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">¿Olvidaste tu contraseña?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- offcanvas -->
+        <div>
+            <input type="checkbox" name="" checked="checked">
+            <span class="icon"> </span>
+            <ul>
+                <li><a href="#genero">Genero</a></li>
+                <li><a href="#loglos">Loglos unicos</a></li>
+                <li><a href="#jefes">Jefes dificiles</a></li>
+                <li><a href="#top">Tops</a></li>
+                <li><a href="#debate">Debate</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="cartel2">
+        <div class="cartelTitulo">
+            <h3>Top de los mejores videojuegos de los ultimos 10 años</h3>
+        </div>
+    </div>
+    <section>
+        <div class="aclaracion">
+            <h5>Este top esta basado a los ganadores del juego del año por el festival The Game Awards (su primera edicion fue en 5 de diciembre del 2014) </h5>
+        
+        </div>
+    </section>
+    <br class="separar">
+    <br class="separar">
+    <br class="separar">
+    <br class="separar">
+    <section class="topS">
+        <div class="año">
+            <h4>Elden Ring</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/eldenRing.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2022</h6>
+                <h6>Genero: Rol de acción</h6>
+                <p>El juego posee el título a Juego del año del 2022 según <strong> The Game Awards.</strong></p>
+                <p>Elden Ring es un videojuego de rol de acción en tercera persona, con una jugabilidad centrada en el
+                    combate y la exploración. Presenta características similares de otros juegos desarrollados por
+                    FromSoftware, tales como la saga Dark Souls, Bloodborne y Sekiro: Shadows Die Twice. Localizado en
+                    un mundo abierto, el jugador puede explorar libremente las Tierras Intermedias y sus seis áreas
+                    principales.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>It Takes Two</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/it takes two.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2021</h6>
+                <h6>Genero: acción-aventura y videojuego de plataformas</h6>
+                <p>El juego posee el título a Juego del año del 2021 según <strong> The Game Awards.</strong></p>
+                <p>It Takes Two es un videojuego de acción y aventuras con elementos de juegos de plataformas. Está
+                    diseñado específicamente para el modo multijugador cooperativo en pantalla dividida, lo que
+                    significa que debe jugarse con otro jugador a través del juego local o en línea. El juego presenta
+                    una gran cantidad de mecánicas de varios géneros de videojuegos </p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>The Last of Us Part II</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/the last.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2020</h6>
+                <h6>Genero: Terror, Acción-aventura, Disparos en tercera persona</h6>
+                <p>El juego posee el título a Juego del año del 2020 según <strong> The Game Awards.</strong></p>
+                <p>La historia transcurre cinco años después de los eventos del primer juego, en esta segunda entrega
+                    tomaremos el control de Ellie como la protagonista, la cual emprenderá un largo viaje para lograr su
+                    venganza por el asesinato de Joel.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>Sekiro</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/sekiro.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2019</h6>
+                <h6>Genero: Acción-Aventura</h6>
+                <p>El juego posee el título a Juego del año del 2019 según <strong> The Game Awards.</strong></p>
+                <p>El juego fue lanzado el 22 de marzo de 2019 en las plataformas PlayStation 4, Xbox One y Microsoft
+                    Windows.El juego sigue a un shinobi del Período Sengoku, conocido como Lobo, que intenta vengarse
+                    de un clan de samuráis que atacó y secuestró a su maestro.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>God of War</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/God of War.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2018</h6>
+                <h6>Genero: Acción-aventura</h6>
+                <p>El juego posee el título a Juego del año del 2018 según <strong> The Game Awards.</strong></p>
+                <p>Han pasado años desde que Kratos tomó su venganza contra los Dioses Olímpicos. Habiendo sobrevivido
+                    la pelea final contra su padre Zeus, Kratos vive ahora con su joven hijo Atreus en el mundo de los
+                    Dioses Nórdicos, una tierra hostil habitada por feroces monstruos y guerreros. Kratos deberá actuar
+                    como mentor y protector de su hijo, y tendrá que dominar la ira y enojo que tuvo durante muchos años
+                    y atar cabos sueltos.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>The Legend of Zelda: Breath of the Wild</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/zelda.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2017</h6>
+                <h6>Genero: acción-aventura, videojuego de rol y videojuego posapocalíptico</h6>
+                <p>El juego posee el título a Juego del año del 2017 según <strong> The Game Awards.</strong></p>
+                <p>Link despierta en un mundo postapocalíptico después de estar cien años
+                    durmiendo para derrotar a Ganon y salvar al reino de Hyrule. A diferencia de los otros títulos
+                    predecesores de la serie, el juego presenta un mundo abierto que le permite al jugador encontrar
+                    distintas maneras de completar un objetivo y que la historia pueda ser completada de forma no
+                    lineal.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>Overwatch</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/overwatch.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2016</h6>
+                <h6>Genero: videojuego de disparos en primera persona</h6>
+                <p>El juego posee el título a Juego del año del 2016 según <strong> The Game Awards.</strong></p>
+                <p>Es la nueva saga de Blizzard esta vez en forma de multijugador online en primera persona ambientado
+                    en un mundo futurista. Habrá muchos personajes distintos y cada uno de ellos hará uso de sus propias
+                    armas y amplificadores. Destacar que cada uno de ellos cumplirá un rol diferente dentro del equipo,
+                    como Defensa, Tanque, Apoyo y Ataque.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>The Witcher 3: Wild Hunt</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/the-witcher-3.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2015</h6>
+                <h6>Genero: Action-RPG / Mundo abierto / RPG Occidental</h6>
+                <p>El juego posee el título a Juego del año del 2015 según <strong> The Game Awards.</strong></p>
+                <p>Es un juego de perspectiva en tercera persona, el jugador controla al protagonista Geralt de Rivia,
+                    un cazador de monstruos conocido como Lobo Blanco, es un brujo, el cual emprende un largo viaje a
+                    través de Los reinos del norte. El jugador lucha contra el peligroso mundo mediante magia y espadas,
+                    mientras interactúa con los NPC y completa tanto misiones secundarias como la misión principal de la
+                    historia, La cual es encontrar a la hija adoptiva de Geralt, Ciri, y detener la profecía del
+                    invierno blanco.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>Dragon Age: Inquisition</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/dragon age.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2014</h6>
+                <h6>Genero: Rol de acción</h6>
+                <p>El juego posee el título a Juego del año del 2014 según <strong> The Game Awards.</strong></p>
+                <p>Dragon Age: Inquisition tendrá lugar en el continente de Thedas, el mundo fantástico en el que tienen
+                    lugar los dos juegos anteriores. El juego cubrirá más territorio que sus predecesores, con un mapa
+                    siendo descrito como unas cuatro o cinco veces más grande que Ferelden, el escenario del primer
+                    juego de la serie.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="año">
+            <h4>GTA 5</h4>
+            <div class="imgA">
+                <img src="imagenes/secciones/gta5.jpg" alt="">
+            </div>
+            <div class="detalles">
+                <h6>Año: 2013</h6>
+                <h6>Genero: Acción-aventura, Mundo abierto</h6>
+                <p>En esos tiempos no existia los premios <strong> The Game Awards</strong> pero es mas que evidente que el mejor videojuego del año fue gta 5</p>
+                <p>Según Rockstar, el tema central en la historia de GTA V es la búsqueda del todopoderoso dólar. Esta decisión del equipo desarrollador fue sobre la base de la crisis financiera de 2008.</p>
+            </div>
+        </div>
+        <hr>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div>
+            <p>Diseñado por Sergio Marquez&copy;2023</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,6 +1,14 @@
+/* esto lo saqe del inspeccionar pagina por qe me impedia hacer algo */
+.modal-backdrop{
+    --bs-backdrio-bg:none;
+    position:inherit;
+}  
 /* cambio el color de las palablas del link */
 body section div a:hover {
     color: #fff; 
+}
+body{
+    background-color: #FBFCFC ;
 }
 a{
     text-decoration: none;
@@ -10,7 +18,7 @@ h2{
     font-family: 'Press Start 2P',cursive;
     color: #fff;
 }
-img {
+.mando {
     width: 110px;
     padding: 10px;
 }
@@ -21,15 +29,43 @@ img {
     align-items: center;
     padding: 10px;
 }
-header {
+header{
     background-color: black;
     position: fixed;
     width: 100%;
     height: 80px;
+    z-index: 200; 
+    overflow:hidden
 }
-/* offcanvAS primera parte BOTON*/
+/* usuario logo y posision------------------------------ */
+.usuario{ 
+    color: rgb(64, 134, 224); 
+    position:absolute;
+    left: 10px;   
+    top: 10px; 
+    padding: 10px; 
+    display: flex; 
+    z-index: 100002;
+}
+div.modal-content{
+    width: 97%;
+}
+.usuario:hover{
+    color: #fff;
+}
+.modal-header{
+    background-color: rgb(64, 134, 224) ;
+}
+.modal-footer{
+    background-color: rgb(64, 134, 224) ;
+}
+.user{
+    width: 50px;
+    font-size: 35px; 
+}
+/* /* offcanvAS primera parte botoon */
 input[type="checkbox"] {
-    position: fixed;
+    position: absolute; 
     right: 20px;
     top: 20px;
     width: 50px;
@@ -40,13 +76,14 @@ input[type="checkbox"] {
 }
 /* boton */
 .icon {
-    position: fixed;
+    
+    position: absolute; 
     right: 20px;
     top: 10px;
     width: 50px;
     height: 50px;
     z-index: 100001;
-    background: rgb(209, 42, 42);
+    background:rgb(42, 103, 184);
     pointer-events: none;
 }
 .icon:before {
@@ -59,14 +96,14 @@ input[type="checkbox"] {
     color: #fff;
     text-align: center;
     line-height: 50px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     font-weight: 700;
 }
 input[type="checkbox"]:checked~.icon::before {
     content: 'menu';
 }
 /* y aca comienza el offcanvas segunda parte OFFCANVAS*/
-ul {
+ul{
     position: fixed;
     top: 0;
     left: 0;
@@ -77,10 +114,12 @@ ul {
     height: 100vh;
     background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
     transition: 0.5s;
-    z-index: 100000;
+    z-index: 100003; 
     overflow-y: auto;
+    /* fondo borroso */
+    backdrop-filter: blur(10px); 
 }
-input[type="checkbox"]:checked~ul {
+input[type="checkbox"]:checked~ul { 
     left: -300px;
 }
 ul li {
@@ -99,9 +138,11 @@ ul li a {
 ul li a:hover {
     transform: translate(10px);
     color: rgb(251, 255, 255);
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background:rgb(42, 103, 184);
     border-radius: 10px;
 }
+
 /* generos ,es para no interferir con el navegador*/
 .containerGenero {
     padding-top: 80px; 
@@ -155,14 +196,17 @@ ul li a:hover {
 }
 .seccion:first-child {
     background-image: url(../imagenes/secciones/loglo.png);
-    background-size: cover;}
+    background-size: cover;
+    background-position: right;}
+    
 .seccion:first-child:hover {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(../imagenes/secciones/loglo.png);}
 .seccion:nth-child(2) {
     background-image: url(../imagenes/secciones/jefes.png);
-    background-size: cover;}
+    background-size: cover;
+    background-position: bottom;}
 .seccion:nth-child(2):hover {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
@@ -189,31 +233,491 @@ footer{
     padding: 5px 0;
     margin-top:20px;
 }
-/* inicio accion-aventura-----------------------------------------------------------------------------------------------------*/
+/* boottraps */
+img{ 
+    width: 100%;    
+}  
+.col-md-6.float-md-start.mb-3.ms-md-3{
+    padding: 20px; 
 
+}
+ol{
+    list-style: none;
+}
+/* ejempro de div qe desaparece en mobile pero aparece en la compu */
+.desaparece{
+     display: none; 
+} 
+/* inicio accion-aventura-----------------------------------------------------------------------------------------------------*/
 h3{
     display: flex;
     justify-content: center;
     font-family: 'Press Start 2P',cursive;
     color: black;
 }
+.col{
+    padding: 0px 0px;
+}
+img.d-block.w-100{
+    padding: 0px;
+}
+
 /* fin accion aventura */
 /* inicio Lucha ----------------------------------------------------------------------------------------------------------*/
+/* img.card-img-top{
+     width: 30%; 
+}  */
 
-
-
-/* fin lucha */
-@media screen and (min-width: 767px ){
-    h2{
-        color: blue;
-    }  
+.flex-shrink-0.me-3{
+    width: 75px;
 }
+/* fin lucha */
+/* inicio de LOGROS Y DATOS CURIOSOS------------------------------------------------------------------------------------------------- */
+.cartel{
+    position: relative; 
+    top: 80px;  
+    width: 100%;
+    height: 180px;
+    background-color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../imagenes/secciones/loglo.png);
+    background-size: cover; 
+    background-position: center;
+}
+
+.cartelTitulo h3{
+    color: #fff;
+} 
+/* entorno de todos los elementos que lleva */
+
+.youtube{
+    width: 90%;
+    margin: 0 auto;
+    /* margin: 10px; */
+    border: 3px solid rgb(206, 202, 202);
+    padding: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.28);
+}
+.youtube p{
+    font-size: 20px;
+}
+.divider{
+    border: none;
+    height: 5px;
+    background-color:rgb(129, 127, 127);
+}
+/* fin */
+/* seccion jefes -----------------------------------------------------------------------------------------------------------*/
+.contenedorjefe{
+    width: 80%;
+    margin: 0 auto;
+}
+.cartel1{
+    position: relative;
+    top:80px ;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../imagenes/secciones/jefes.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.fondo{
+    background-image:url(../imagenes/secciones/Resident.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    /* background-position: 0 10px ;    */
+}
+.cajaSecc{
+    width: 100%;
+    /* height: 430px; */
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 10px;
+}
+.cajaSecc h5{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.cajaSecc p{
+    color: #fff;
+}
+.cajaSecc:hover{
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+    backdrop-filter: blur(1px); 
+    
+}
+
+/* fin */
+/*seccion Top--------------------------------------------------------------------------------------  */
+.bodytop{
+    background-color: rgb(247, 242, 242);
+}
+.cartel2{
+    position: relative;
+    top:80px ;
+    width: 100%;
+    height: 190px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../imagenes/secciones/top.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding: 10px;
+}
+.aclaracion{
+    margin-top: 80px;
+    background-color: rgb(233, 227, 227);
+    width: 100%;
+    height: 120px;
+    
+    padding: 10px;
+}
+
+.topS{
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.28);
+}
+.imgA img{ 
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+.detalles{
+    padding: 20px;
+}
+.topS .año h4{
+    padding: 20px;
+} 
+
+/* Fin */
+/* comienzo debate ------------------------------------------------------------------------------------------------ */
+.cartel3{
+    position: relative;
+    top:80px ;
+    width: 100%;
+    height: 190px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../imagenes/secciones/devate.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding: 10px; 
+}
+.cartel3 h6{
+    color: #fff;
+}
+
+.pubricarS{
+    margin: 0 auto;
+    background-color: #ccc;
+    width: 95%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.pubricar{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.pubricar textarea{
+    width: 500px;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+
+
+.pubricar input[type="submit"]{
+
+    background:rgb(202, 207, 207);
+    padding: 6px; 
+    position: relative;
+    top: 0.5rem;
+    border:1px solid  #fff;
+    width:90px ;
+    height: 100%;
+}
+.pubricar input[type="submit"]:hover{
+    background-color: rgb(145, 143, 141);
+}
+
+
+/* es el afuera de la parte donde muestra la pubricacion */
+.entorno{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto ;
+    
+}
+.seccionDebate{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 20px;
+}
+.perfil{
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(145, 143, 141);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 5px;
+}
+.perfil h6{
+    display: flex;
+    align-items: center;
+}
+.perfil img{
+    padding: 2px;
+    max-width: 10%;
+    border-radius: 50%;    
+}
+
+
+
+.opinion{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(145, 143, 141);
+    padding: 10px; 
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+.entornoImg{
+    width: 100%;
+    height: 255px;
+    background-color: rgb(145, 143, 141);
+    border: 1px solid white;
+}
+.imgC{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-color: chartreuse;
+    overflow:hidden;
+}
+.imgC img{
+    height: 100%;
+}
+.amigo{
+    width: 100%;
+    height: 140px;
+    border: 1px solid white;  
+    display: block;
+    padding: 5px;
+
+    border-radius: 20px;
+}
+
+.perfilC {
+    display: flex;
+    background-color: rgb(207, 204, 200);
+    border-radius: 20px 20px 0px 0px;
+    
+}
+.perfilC h6{
+    display: flex;
+    align-items: center;
+}
+.perfilC img{
+    padding: 5px; 
+    max-width: 10%;
+    border-radius: 50%;
+}
+
+.comentarioC{
+    background-color: rgb(207, 204, 200);
+    border-radius: 0px 0px 28px 29px;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+}
+.opcionC input[type="submit"]{
+
+    background: rgb(207, 204, 200);
+    padding: 6px; 
+    position: relative;
+    top: 0.5rem;
+    right: 2rem;  
+    border:1px solid  #fff;
+    width:90px ;
+    height: 100%;
+}
+.opcionC input[type="submit"]:hover{
+    background-color: rgb(145, 143, 141);
+}
+.opcionC p{
+    display: flex;
+    justify-content: flex-end;
+}
+.opcionC{
+    border: 1px solid white; 
+    background-color: rgb(207, 204, 200);
+}
+
+/* fin */
+
+
+
+
+
+
+@media screen and (min-width: 767px ){
+    /* elimina el effcanvas */
+    input[type="checkbox"]{
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+
+
+    header{
+        position:relative;
+    }
+    .icon{
+        display: none;
+    }
+    .containerSeccion{
+        margin: 0 auto;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;  
+        align-items: center;  
+        flex-wrap: wrap;
+    }
+    .seccion{
+        width: 50%;
+        height: 320px;
+    }
+    .containerGenero {
+        padding-top: 0px; 
+    }
+    /* seccion logros--------------------------------------------------------------------------------- */
+    .cartel{
+        position:static; 
+        bottom: 80px;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .separar{
+        display: none;
+    }
+    .youtube{
+        width: 80%;
+    }
+    /* jefes --------------------------------------------------------------------------------------------- */
+    .cartel1{
+        position:static; 
+        bottom: 80px;
+        height: 130px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .contenedorjefe{
+        width: 50%;
+    }
+    .separar{
+        display: none;
+    }
+    body.fondo{
+        background-position: none;
+        background-position: center;
+    }
+    /* fin */
+    /* seccion  top ---------------------------------------------------------------------------------------- */
+    .cartel2{
+        position:static;
+        bottom: 80px;
+        height: 230px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .aclaracion{
+        margin-top: 0;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .topS{
+        width: 70%;
+        margin: 40px;
+    }
+    /* fin */
+    /* seccion debate ----------------------------------------------------------------------------------------------------------- */
+    .cartel3{
+        position:static;
+        bottom: 80px;
+        height: 230px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .pubricarS{
+        width: 80%;
+    }
+    .entorno{
+        width: 70%;
+    }
+
+    /* Fin */
+
+
+}
+
+
+
+
+
+
+
+
+
+/* patalla de computadora */
 @media screen and (min-width: 1024px) {
+    /* pantalla principal --------------------------------------------------------------------- */
     h2{
         color: #fff;
     }
     header{
-        position: static;
+        position:relative;
     }
     form{
         display: flex;
@@ -228,22 +732,67 @@ h3{
         margin: 0 auto;
         width: 100%;
         display: inline-flex;
-        /* justify-content: center;  */
-        /* align-items: center;  */
+        justify-content: center;  
+        align-items: center;  
         flex-wrap: wrap;
     }
     .seccion{
         width: 50%;
         height: 350px;
     }
-    .icon {
-        position:none;
-        right: 0px;
-        top: 0px;
-        width: 0px;
-        height: 0px;
-        z-index: 0;
-        background:none;
-        pointer-events: none;
+    
+     
+    /*seccion logros -------------------------- -------------------------------------------------- */
+    .cartel{
+        position:static; 
+        bottom: 80px;
+        background-position: top;
     }
+    .youtube{
+        width: 60%;
+    }
+    .divider{
+        background-color: #333;
+    }
+    .separar{
+        display: none;
+    }
+
+    /* fin */
+
+    /*seccion  jefes-------------------------------------------------------------------------------------------- */
+        .contenedorjefe{
+            width: 45%;
+        }
+        .cartel2{
+            height: 250px;
+            background-position: center;
+            padding: 30px;
+        }
+        body.fondo{
+            background-image: url(../imagenes/secciones/dragonJefeFondo.jpg);
+            background-size: cover;
+            background-position:top;
+        }
+    /* fin */
+
+    /* seccion  top---------------------------------------------------------------------------------------------------------*/
+        .topS{
+            width: 50%;
+        }
+    /* fin */
+
+    /* seccion debate----------------------------------------------------------------------------------------------------------- */
+    .cartel3{
+        background-position: center;
+    }
+    .pubricarS{
+        width: 60%;
+    }
+    .entorno{
+        width: 50%;
+    }
+
+
+    /* fin */
 }
