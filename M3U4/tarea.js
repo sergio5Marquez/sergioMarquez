@@ -25,7 +25,7 @@ caja('green',2)
 // Programar un contador de caracteres para un textarea.
 
 function contador(num ){
-    document.getElementById("charNum").innerHTML = num.value.length+' caracteres';
+    document.getElementById("contador").innerHTML = num.value.length+' caracteres';
 }
 
 
