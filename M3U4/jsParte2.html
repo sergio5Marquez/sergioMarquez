@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // Crea una función que tenga dos argumentos: num1, num2, y que deuelva como 
+        //  resultado la suma de ambos números. Se supone que se usarán solo números
+        //  válidos.
+        //  function suma(num1,num2){
+        //     return (num1+num2)
+        //  }
+        //  let a,b
+        //  a=parseInt(prompt("Ingrese un numero"))
+        //  b=parseInt(prompt("Ingrese el segundo numero"))
+        //  alert(suma(a,b))
+
+        // Esta función se va a llamar esPar(num) y deberá devolver verdadero si el 
+        // argumento es par y falso si es impar. Se acepta que solo se usarán números
+        // válidos.
+        //      function esPar(num1){
+        //          return (num1 %2==0)
+        //      }
+        //      let num=parseInt(prompt("ingrese un numero"))
+        //      alert(esPar(num))
+        //3 Función que calcule si un número es múltiplo de otro. La función recibirá 
+        // dos argumentos, el primero será el supuesto mutiplo del segundo argumento.
+        // function mutiplo(num1,num2){
+        //     return(num1 % num2 == 0)
+        // }        
+        // let n1,n2
+        // n1=parseInt(prompt("Ingrese un numero 1"))
+        // n2=parseInt(prompt("Ingrese un numero 2"))
+        // alert(mutiplo(n1,n2))
+        //4  Definir una función que cree una cadena de letras repetidas tantas 
+        // veces como le digamos. La función recibe dos argumentos: la letra y el 
+        // número de repeticiones.
+        //  function cantidad(abc,n){
+        //     let cad=``
+        //     for(let i = 0 ; i < n ; i++){
+        //         cad += abc
+        //     }
+        //     return cad
+        //  }
+
+        //  let letra,num=0
+        //  letra=prompt("Ingrese una letra")
+        //  num=parseInt(prompt("Ingrese la cantidad de veses qe qiera qe se repita"))
+        //  alert(cantidad(letra,num))
+
+        //5 Usa el algoritmo de Euclides para diseñar una función que determine el 
+        // máximo común divisor de dos números. Bueno este algoritmo es bien simple. 
+        // Para clacular el mcd de A y B:
+
+        // Si A = 0 entonces MCD(A,B)=B, ya que el MCD(0,B)=B, y podemos detenernos.  
+        // Si B = 0 entonces MCD(A,B)=A, ya que el MCD(A,0)=A, y podemos detenernos.  
+        // Calcula el resto de A/B
+        // Asigna a A el valor de B
+        // Asigna a B el resto
+        // Repite hasta que A o B sean 0.
+        // function mcd(n1,n2){
+        //     let mcd,resto;
+        //     while (n1 !=0 && n2 !=0){
+        //         resto= n1%n2
+        //         n1=n2
+        //         n2=resto
+        //     }
+        //     if (n1==0) mcd =n2
+        //     if (n2==0) mcd =n1
+        //     return  mcd   
+        // }        
+        // let num,num0
+        // num=parseInt(prompt("Ingrese un numero"))
+        // num0=parseInt(prompt("Ingrese un numero"))
+        // alert(`el mcd de ${num} y ${num0} es :`+mcd(num,num0))
+
+        //6 Diseña una función que calcule el factorial de un número, usa una función ---------------------------------------------------------------
+        // recursiva (que se llama a si misma). Recuerda que el factorial de un 
+        // número es el resultado de multiplicar cada número por el anterior hasta 
+        // llegar a 1. Y el factorail de 0 es por definición 1
+        // function recursiva(n1){
+        //     if(n1==0){
+        //         return 1
+        //     }
+        //     return n1*recursiva(n1-1)
+        // }
+        // let num1=parseInt(prompt("Ingrese un numero"))
+        // document.write("el factorial de "+num1+" es de "+recursiva(+num1))
+
+        //7 Escribir una función que reciba un número como argumento y lo devuelva 
+        // invertido, o sea, escrito del revés. Usar esta función para determinar si
+        //  un número es capicúa (palíndromo)
+        // function invertir(num){
+        // var cad= '' 
+        // while (num>0){
+        //     cad += num%10; 
+        //   	 	num = parseInt(num/10)
+        //  }
+        // return parseInt(cad);
+        // }
+        // var dato;
+        // dato = parseInt(prompt("Escirbe un número"));
+        // if (dato == invertir(dato)){
+        //   	alert(dato+" es palíndromo")
+        //   }
+        // else{
+        //    alert(dato+" no es palíndromo")
+        //  }  
+        //8 Escribe una función que recibe como argumento un precio y el porcentaje 
+        // de impuestos. La función devolverá el valor total a pagar, teniendo en 
+        // cuenta que al precio se le descuenta un porcentaje del 10% si es mayor 
+        // de 100 euros.
+        //  function precioFinal(precio,imp){
+        //      let descuento,impuestos,total
+        //      impuestos = precio / 100 * imp
+        //     if (precio>=100){
+        //          descuento= (precio / 100) * 10
+        //          total=precio-descuento
+        //          return total+impuestos
+        //      }else{      
+        //          return precio + impuestos
+        //      }
+        //  }
+        //  let num=parseInt(prompt("Ingresa el precio del producto"))
+        //  let impuesto=parseInt(prompt("Ingrese el impuesto del producto"))
+        //  document.write("producto: $"+num+" mas impuestos "+precioFinal(num,impuesto))
+        // // 200 5 
+        // function total(precio, impto){
+        // var neto;
+        // if (precio > 100){
+        //   	 	precio = precio - 10*precio/100;
+        // }
+        // neto = precio + precio*impto/100;
+        // return neto;
+        // }
+        // var gasto, imp;
+        // gasto = parseInt(prompt('Precio total'));
+        // imp = parseInt(prompt('Impuesto %'));
+        // alert("El total  pagar es "+total(gasto, imp));
+
+        //9 En esta función se trata de convertir notas a calificaciones literales 
+        // de manera que menos de 5 es suspenso, un 5 es aprobado, el 6 es bine, el 
+        // 7 y el 8 son notable, el 9 es sobresaliente y el 10 es matrícula.
+        // function calificacion(n) {
+        //     if (n < 5) {
+        //         return "Suspenso"
+        //     } else if (n == 5) {
+        //         return "Aprobado"
+        //     } else if (n == 6) {
+        //         return "Bien"
+        //     } else if (n <= 8) {
+        //         return "Notable"
+        //     } else if (n == 9) {
+        //         return "Soblesaliente"
+        //     } else if (n == 10) {
+        //         return "Matriculado"
+        //     }
+        // }
+        // let nota = parseInt(prompt("Ingrese su nota"))
+        // alert("Calificasion: " + calificacion(nota))
+        // // otra opcion
+        // function calificacion(nota) {
+        //     var calif;
+        //     switch (nota) {
+        //         case 5:
+        //             calif = 'Aprobado';
+        //             break;
+        //         case 6:
+        //             calif = 'Bien';
+        //             break;
+        //         case 7:
+        //         case 8:
+        //             calif = 'Notable';
+        //             break;
+        //         case 9:
+        //             calif = 'Sbresaliente';
+        //             break;
+        //         case 10:
+        //             calif = 'Matrícula';
+        //             break;
+        //         default:
+        //             calif = 'Suspenso'
+        //     }
+        //     return calif;
+        // }
+        // var minota;
+        // minota = parseInt(prompt("Entrar nota de 1 a 10"));
+        // alert("tu calificación es " + calificacion(minota));
+        
+    //10 Escibe una función que devuelva el siglo al que correponde un año que 
+    // se la pasa como argumento. El siglo 1 va del año 1 al 100, el siglo 2 va 
+    // del 101 al 200....
+    // function siglo(año){
+    //     var siglo = parseInt((año - 1)/100) + 1;
+    //     return siglo;
+    // }
+    // var añoActual;
+    // añoActual = parseInt(prompt("Entrar año completo"));
+    // alert("Pertenece al siglo " + siglo(añoActual));
+
+
+    // let resultado = (n1) =>(n1 %2== 0)?"es par":"es impar"  
+    // let num = parseInt(prompt("Ingrese num"))
+    // alert(resultado(num))
+
+    const objetos=["lapis","caja",432,"cama","lampara"]
+    for (articulos in objetos){
+        document.write(articulos+`<br>`)
+    }
+
+    document.write(`<br>`)
+
+    for(artic of objetos){
+        document.write(artic+`<br>`)  
+    }
+    document.write(`<br>`)
+
+    for(let i = 0 ; i < objetos.length ; i++){
+        if(objetos[i] === 432){
+            continue;
+        }
+        document.write(objetos[i]+`<br>`)
+    }
+
+    document.write(`<br>`)
+
+    for(artic in objetos){
+        if(objetos[artic]===432){
+            break;
+        }
+        document.write(objetos[artic]+`<br>`)
+    }
+
+    document.write(`<br>`)
+    // En este script deberás crear un array para guardar los nombres de los días 
+    // de la semana, empezando por 0 para el domingo. Para comprobar el funcionamiento
+    // pide al usuario un número entre 0 y 6 y devuelve el nombre del día. Se supone 
+    // que el dato tecleado estará entre 0 y 6
+    // const semana=["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"]
+    // let dia=parseInt(prompt("Ingrese un numero del 0 al 6"))
+    // alert(semana[dia])
+
+
+    //2 Crea un array booleano con dos valores 'verdadero' y 'falso'. Este array te 
+    // sirve para traduicr los valores true y false. Usalo para que el script muestre
+    //  un alert con el nombre vedadero si un usuario teclea un valor entre 0 y 9 y 
+    // falso en el caso contrario.
+    // const Bolean=["verdadero","falso"];
+    // let num=parseInt(prompt("Ingrese un numero del 0 al 9"));
+    //     alert(respuesta=(num <= 9 & num >= 0)? Bolean[0]:Bolean[1]);
+
+    // otra respuesta
+    // var booleano = ['falso', 'verdadero'], test, indice;
+    // test = parseInt(prompt("Teclear un número"));
+    // indice = (test <= 9 && test >= 0 )? 1:0;
+    // alert(booleano[indice]);
+
+
+
+    //3 Sin usar métodos del objeto array, diseña una función llamada sumaLista() 
+    // capaz de sumar todos los números que forman el array que se le pase como 
+    // argumento.
+    // function sumaLista(list.length[]){
+    //     for(li of list[]){
+            
+    //     }
+
+    // }
+
+    // const lista=[20,15,15]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

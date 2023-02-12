@@ -316,30 +316,189 @@
 // }
 // document.write("FIn")
 
-//4 Desarrolle un algoritmo que permita al usuario ingresar cuantas palabras desee.
+//4 Desarrolle un algoritmo que permita al usuario ingresar cuantas palabras desee.---------------------------------------------------------------------
 //  Cuando ya no quiera ingresar más palabras, deberá mostrar cuántas de las 
 // palabras ingresadas poseen más de 6 (seis) caracteres.
 
-let salir=0
-let palabla=""
-let contenedor6
-let contenedor=0
-let cont
+// Usando un bucle while escribir un script que pida un valor entero y cree 
+// una lista con los números desde el 0 al valor tecleado. Luego deberá sacar
+//  esa lista con un alert. Los números se separarán por comas. 
 
-while(salir < 4){
-    palabla=prompt("ingrese una palabla")
-    
-    
+// let max,contar,lista;
+// contar=0
+// lista=``;
+// max=parseInt(prompt("Ingrese un numero"));
 
-     if (palabla.length(palabla)>=6){
-         contenedor6=contenedor6+1
-     }else{
-         cont=cont+1
-     }
-    salir++
-    document.write("hola"+`<br>`)
+// while(contar < max){
+//     lista+=contar+`, `;
+//     contar++;
+// }
+// lista+=contar;
+// document.write(lista)
+
+//  mi estilo erroneo
+//  let num=0,max;
+//  max=parseInt(prompt("ingrese un numero"))
+// while(num <= max){
+//      document.write(num+`,`)
+//      num++
+// }
+
+
+// Se trata de pedir al usuario que teclee un número entre 1 y 5, si escribe
+//  alguno que esté fuera de ese rango deberá volver a pedir el número
+// let num=0
+// while(num < 1 || num > 5){
+//     num=parseInt(prompt("Ingrese un numero del 1 al 5 para salir"))
+// }
+// alert("saliste")
+
+//3) Un script que preguntará al usuario si desea continuar con el programa.
+// Si el usuario pulsa una letra n (mayúscla o minúscula), el programa finalizará.
+// Cualquier otra entrada repetirá la pregunta
+// let resp
+// while(resp != `n` & resp != `N`){
+//     resp=prompt("ingrese un letra minuscula o mayuscaula")
+// }
+// alert("saliste")
+
+//4 Determinar si el número que teclea el usuario es primo o no.
+//  Recordar que un número primo es el que solo puede dividirse por si
+//  mismo y por la unidad.
+
+// let numero, resto, divisor = 2, esPrimo = " Si";
+// numero = parseInt(prompt("Teclear un numero entero"));
+// while (divisor < numero ){
+//     if( numero % divisor == 0){
+//       esPrimo = " No"
+//        break;
+//     }
+//    divisor++;
+// }
+// alert("El numero "+ numero + esPrimo + " es primo");
+
+
+// como yo lo aria
+// let primo,salir=true
+// while(salir==true){
+//      primo=parseInt(prompt("ingrese un numero primo"))
+//     if (primo % 2 == 1  ){
+//         alert("es primo ")
+//         salir=false
+//         break
+//     }else{
+//         alert("no es primo, repetir")
+//     }
+// }
+// alert("Fin")
+
+
+
+//5 Escribir un script que pida al usuario una contraseña. Si coincide le 
+// devolverá el mensaje "Acceso concedido" y si no coincide le deolverá el 
+// mensaje "Acceso Denegado" . Solo falla tres veces se emitirá el mensaje 
+// "Alerta, intruso"
+
+// let contador=0,contraseña=0
+
+// while(contraseña != 1234){
+//     contraseña=parseInt(prompt("Ingrese la contraseña"))
+//     if(contraseña==1234){
+//         alert("entraste, bienvenido")
+//     }
+//     contador++
+//     if (contador >= 3){       
+//         alert("Alerta Intruso")
+//         break
+//     }
+// }
+
+
+
+
+//6) En este script se pedirá al usuario que teclee un número cada vez. 
+// El proceso acaba cuando teclee un 0 en cuyo caso además mostrará la suma de
+//  todos los números tecleados.
+// let num,contenedor=0
+// while (num !== 0  ){
+//     num=parseInt(prompt("Ingrese un numero"))
+//     contenedor=contenedor+num
+// }
+// alert("esta es la contidad total de numeros sumados "+contenedor)
+
+
+
+
+//7 Este script le pide al usuario que vaya tecleando números enteros positivos 
+// hasta que el usuario ingrese el 0. En esete caso el programa acaba mostrando
+//  el valor máximo y mínimo de los números tecleados.
+// let max=0, min=0, numero;
+// numero = parseInt(prompt("Teclee un número"));
+// min = numero;
+// while (numero !=0){
+//     max = (numero > max)?numero:max;
+//     min = (numero < min)?numero:min;
+//     numero = parseInt(prompt("Teclee un número"));
+// }
+// if ( max== 0){
+//     alert("No ha tecleado ningún número ")
+// }
+// else{
+//     alert("El máximo es "+ max + "\nEl mínimo es "+min);
+// }
+
+//8 Este script le pide al usuario que vaya tecleando números una y otra vez,
+//  pero solo números pares, en caso de que teclee un número impar el programa 
+// acabará y dirá la cantidad de números pares ingresados (el 0 cuenta como par).
+// let contenedor=0,num=0
+// while(num % 2 == 0 ){    
+//     num = parseInt(prompt("Ingrese un numero"))
+//     contenedor++
+// }
+// contenedor--
+// document.write(`La cantidad de numeros pares fueron ${contenedor}`)
+
+//9 Este script muestra un menu de opciones: 1- Leer datos. 2- Mostrar datos 3- Fin.
+//  El usuario deberá teclear uno de ellos y el programa mostrará la opción 
+// elegida. Si teclea un valor fuera del menus se mostrará un mensaje de error y 
+// se vuelve a pedir un número de opción. El programa finaliza al teclear el 3.
+// num=0
+// while(num != 3){
+//     num=parseInt(prompt("menu de opciones 1-leer datos|2-mostrar datos|3-salir"))
+//     if (num==1){
+//         alert("Leer datos")
+//     }else if(num==2){
+//         alert("Mostrar datos")
+//     }else if(num==3){
+//         alert("Fin del programa")
+//     }
+//     if (num >3){
+//         alert("ERROR")
+//     }
+// }
+
+// Un script pedirá al usuario que vaya tecleando números hasta llegar al 0,
+//  entocnes el programa muestra "La suma es " seguido de la suma de los números.
+//  Si esta suma es par el programa se repite y si es impar el programa acaba.
+let num,suma=0,respuesta=0
+while(respuesta %2==0){
+    num=parseInt(prompt("Ingrese un numero"))
+    suma=suma+num
+    if(num==0){
+
+        alert("La suma es: "+suma)
+        respuesta=respuesta+suma
+    }
 }
+alert("saliste,Fin")
 
-
- document.write("las palabras con mas de 6 letras hay :"+contenedor6+`<br>`)
- document.write("las palabras con menos de 6 letras hay :"+cont+`<br>`)
+// let suma=0, numero;
+// while (suma%2==0){
+//     numero = parseInt(prompt("Teclear un número"));
+//     while(numero != 0){
+//         suma += numero;
+//         numero = parseInt(prompt("Teclear un número"));
+//   	     }
+//     alert("La suma es "+suma);
+// }
+// alert("Fin de la prueba");
